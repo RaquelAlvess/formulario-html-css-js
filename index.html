@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Virtual</title>
+    <link rel="stylesheet" href="styleF2.css">
+</head>
+
+<body>
+    <h1>Escola Virtual</h1>
+    <h2>Formulário de Pré-Matrícula</h2>
+
+    <form id="formulario">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <table>
+                <tr>
+                    <td>Nome do Aluno:</td>
+                    <td>
+                        <input type="text" id="nome">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nascimento (dd/mm/aaaa):</td>
+                    <td>
+                        <input type="text" size="2">
+                        /
+                        <input type="text" size="2">
+                        /
+                        <input type="text" size="4">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nome da Mãe:</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Nome da Pai:</td>
+                    <td>
+                        <input type="text">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Telefone:</td>
+                    <td>
+                        DDD
+                        (<input type="text" size="2">)
+                        Tel
+                        <input type="text" size="10">
+                        Ramal
+                        <input type="text" size="4">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>E-mail:</td>
+                    <td>
+                        <input type="email" id="email">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+    <fieldset>
+            <legend>Informações de Matrícula</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Série:</label>
+                    <select id="serie">
+                        <option value="">Selecione uma série</option>
+                        <option>Pré-escolar</option>
+                        <option>Fundamental 1°ao 5°</option>
+                        <option>Fundamental 6° ao 9°</option>
+                        <option>Ensino Médio</option>
+                    </select>
+                </td>
+                
+                <td>
+                <label>Turno:</label>
+                <br>
+                <input type="radio" name="turno" id="manha">
+                <label>Manhã</label>
+                <br>
+                <input type="radio" name="turno" id="tarde">
+                <label>Tarde</label>
+                </td>
+                
+                <td>
+                <label>Atividades Extracurriculares:</label>
+                <br>
+                <input type="checkbox" name="informatica" class="atividades">
+                <label>Informática</label>
+                <br>
+                <input type="checkbox" name="musica" class="atividades">
+                <label>Música</label>
+                <br>
+                <input type="checkbox" name="balet" class="atividades">
+                <label>Balet</label>
+                <br>
+                <input type="checkbox" name="pintura" class="atividades">
+                <label>Pintura</label>
+                <br>
+                <input type="checkbox" name="judo" class="atividades">
+                <label>Judô</label>
+                <br>
+                <input type="checkbox" name="futebol" class="atividades">
+                <label>Futebol</label>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+        <fieldset>
+            <button type="submit" id="enviar">Envia Formulário</button>
+            <button type="reset">Limpa Campos</button>  
+        </fieldset>
+    </form>
+
+    <script src="scriptF2.js"></script>
+</body>
+</html>
